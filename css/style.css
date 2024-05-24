@@ -1,0 +1,498 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Table of Contents
+-----------------------------------------------------------------------------
+1. Clean Base
+2. Base Typography
+3. Images
+4. Links
+5. Forms
+6. Tables
+7. Framework 
+*/
+
+/* 1. Clean Base
+------------------------------------------------------------------------------*/
+html,
+body,
+br,
+hr,
+div,
+span,
+a,
+object,
+iframe,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+q,
+address,
+small,
+big,
+cite,
+dfn,
+ins,
+del,
+i,
+em,
+b,
+strong,
+sup,
+sub,
+strike,
+pre,
+code,
+samp,
+kbd,
+var,
+tt,
+form,
+fieldset,
+legend,
+label,
+input,
+textarea,
+option,
+.nobox {
+    background: transparent;
+    border: 0;
+    font-size: 100%;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+br {
+    height: 0;
+}
+
+ul,
+ol,
+dl,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+}
+
+/* Class for clearing floats */
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.cf:after,
+.cf:before {
+    display: table;
+    content: ''
+}
+
+.cf:after {
+    clear: both;
+}
+
+*,
+:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* 2. Base Typography
+------------------------------------------------------------------------------*/
+
+
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #BF9967;
+}
+
+.container {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0px auto;
+    padding: 0 20px;
+}
+
+h1,
+.head1 {
+    font-size: 42px;
+    line-height: 1.1;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+h2,
+.head2 {
+    font-size: 30px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+h3,
+.head3 {
+    font-size: 20px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+h4,
+.head4 {
+    font-size: 16px;
+    line-height: 1.1;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+h5,
+.head5 {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+h6,
+.head6 {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+p:last-of-type {
+    margin-bottom: 0;
+}
+
+/*=======Form-Design-Start=========*/
+
+input {
+    font-family: 'articulat-cf';
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="search"],
+form input[type="url"],
+form textarea {
+    width: 100%;
+    display: block;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    font-size: 12px;
+    border-radius: 40px;
+    line-height: 1;
+    padding: 6px 20px 6px 30px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    outline: none !important;
+    color: #000000;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 43px;
+
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #9A9393;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="number"]:focus,
+form input[type="search"]:focus,
+form textarea:focus {
+    outline: 1px solid #303030;
+}
+
+form input[type="submit"] {
+    display: block;
+    width: 100%;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    font-size: 18px;
+    line-height: 1;
+    padding: 14px 10px;
+    border: 1px solid #000000;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #000000;
+    color: #ffffff;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+form input[type="submit"]:hover,
+form input[type="submit"]:focus {
+    background-color: transparent;
+    color: #000000;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.no_wrap {
+    flex-wrap: nowrap;
+}
+
+.row>div {
+    padding: 0 15px;
+}
+
+.row>div.offset-2 {
+    margin-left: 16.66%;
+}
+
+.row.no-gutters {
+    margin: 0;
+}
+
+.row.no-gutters>div {
+    padding: 0;
+}
+
+.row .col-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.row .col-9 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+
+}
+
+.row .col-8 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 66.66%;
+    flex: 0 0 66.66%;
+    max-width: 66.66%;
+
+}
+
+.row .col-7 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 58.33%;
+    flex: 0 0 58.33%;
+    max-width: 58.33%;
+
+}
+
+.row .col-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+
+}
+
+.row .col-5 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 41.66%;
+    flex: 0 0 41.66%;
+    max-width: 41.66%;
+}
+
+.row .col-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.33%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+
+.row .col-3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+
+
+/* custom css start */
+body {
+    position: relative;
+    z-index: 1;
+    background: #1d1d1f;
+    overflow-x: hidden;
+}
+body:after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    backdrop-filter: blur(8vmax);
+    -webkit-backdrop-filter: blur(8vmax);
+}
+#blob {
+    position: fixed;
+    background-color: white;
+    height: 36vmax;
+    aspect-ratio: 1;
+    background: linear-gradient(to right, #785599, #9e8548);
+    border-radius: 50%;
+    opacity: 0.8;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+}
+section {
+    padding: 48px;
+}
+.title {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #000;
+}
+.image_reveal_box {
+    overflow: hidden;
+    border-radius: 10px;
+}
+.image_wrapper {
+    overflow: hidden;
+    position: relative;
+    padding-top: 80%;
+}
+/* .image_wrapper:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: #ccd5ae;
+    z-index: -1;
+} */
+.image_wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    transform-origin: right;
+}
+.title,
+.slide_up {
+    overflow: hidden;
+}
+.title span,
+.slide_up span {
+    display: block;
+}
+/* custom css end */
